@@ -120,8 +120,8 @@ public class MainActivity extends Activity implements CvCameraViewListener2 {
 		Mat gray = inputFrame.gray();
 		Mat color = inputFrame.rgba();
 
-		Imgproc.medianBlur(gray, gray, 15);
 		Imgproc.threshold(gray, gray, mThreshold, 255, Imgproc.THRESH_BINARY_INV);
+		Imgproc.medianBlur(gray, gray, 15);
 
 		boolean[] detectedLines = mIntersectionDetector.detectLines(gray, color);
 		mDetectedLines = 0;

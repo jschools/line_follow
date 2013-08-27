@@ -12,7 +12,7 @@
     <uses-feature android:name="android.hardware.camera.flash" />
 
     <uses-sdk
-        android:minSdkVersion="15"
+        android:minSdkVersion="8"
         android:targetSdkVersion="18" />
 
     <application
